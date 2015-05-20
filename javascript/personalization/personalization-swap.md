@@ -12,7 +12,7 @@ Toggling the visibility of a single or group of elements is a built in feature f
 All of the personalization tools are built into the core Lytics tag. Step one is to [install the base tag via the workflow](https://activate.getlytics.com/#/integrations/8075d31de91d41b084c23f3d7bbc4f28/action/7d646295b81940cc823e0683245716b4/setup).
 
 ### 2. Create Segments
-Your account comes with very useful data science powered segments out of the box. These can be used for the onsite personalization without issue but feel free to create any segments that make sense. As long as they are marked as `public` you can use them, in real-time as they are creatd / updated. Get an [overview of our segment builder](NEED LINK HERE).
+Your account comes with very useful data science powered segments out of the box. These can be used for the onsite personalization without issue but feel free to create any segments that make sense. As long as they are marked as `public` you can use them, in real-time as they are creatd / updated. Get an [overview of our segment builder](../../core/segment_creation.md).
 
 ###3. Prepare HTML Elements
 There are two built in data attributes that allow elements to be hid / shown based on segment data:    
