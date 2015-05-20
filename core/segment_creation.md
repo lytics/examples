@@ -1,5 +1,1 @@
-coming soon
-installation
-customization
-callbacks
-testing
+segment creation coming soon

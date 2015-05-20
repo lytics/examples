@@ -1,5 +1,5 @@
-coming soon
-installation
-customization
-callbacks
-testing
+tag details coming soon    
+installation    
+customization    
+callbacks    
+testing    

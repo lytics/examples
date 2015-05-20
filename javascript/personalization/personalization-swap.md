@@ -35,14 +35,14 @@ The following will display exactly one element from the group based on membershi
 ```
 
 ##Customization
-1. [**Whitelisting Fields**](NEED WHITELIST DOC) 
+1. [**Whitelisting Fields**](../../core/whitelisting_fields.md) 
 Any fields that can be segmented on within Lytics can also be returned for more advanced customization. In the demo, this is how we get first name but you could also return scores, last page view, email, etc. Any data that would enhance the users experience.
 
-2. [**Callbacks**](NEED WHITELIST DOC)   
+2. [**Callbacks**](../../core/javascript_tag.md)   
 When the Lytics tag has pulled in all user information and completed the built in customization all data can be passed to a callback of your choice. This aids in the more advanced customization.
 
 ##Testing & Debugging
-There are a variety of built in helper methods / degugging tools built in to our tag. More information about testing that an installation is working correctly can be found [here](NEED TESTING DOC)..
+There are a variety of built in helper methods / degugging tools built in to our tag. Details can be found in our [Javascript tag developer docs](../../core/javascript_tag.md).
     
 ##Demo
 * [View Live Demo of Lytics powered personalization](http://example.getlytics.com:2000/personalization-swap.html)
