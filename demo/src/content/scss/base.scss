@@ -1,0 +1,142 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+h5{
+	margin-top:15px;
+	padding:0;
+	line-height: 12px;
+}
+
+.reveal-element {
+  position: relative;
+}
+
+.reveal-element:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: RGBA(41,182,246,.6);
+}
+
+img.logo{
+	width:200px;
+}
+
+#current-demo-detail{
+	margin-top:15px;
+	line-height: 25px;
+	font-size:12px;
+}
+#current-demo-detail span{
+	padding:3px 7px;
+	background: RGBA(0,170,240,1);
+	color: white;
+	margin:5px 5px 5px 0;
+}
+
+.example-segments strong{
+	margin-right:15px;
+	color: RGBA(0,170,240,1);
+}
+.example-detail{
+	display: none;
+}
+
+.example-segments span{
+	margin-right:15px;
+	padding:3px 7px;
+	background: RGBA(0,170,240,1);
+	color: white;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+nav{
+	height: auto;
+	background-color: #555;
+	padding-top:15px;
+}
+
+nav .which-demo{
+	width:500px;
+	line-height:45px;
+	font-size:18px;
+	background-color:#666;
+	margin-bottom:15px;
+}
+
+nav .which-demo a{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.demo-dropdown{
+	width:500px !important;
+	/*line-height:45px;
+	font-size:18px;
+	background-color:#777;*/
+}
+
+nav p{
+	margin:0;
+	padding:0;
+}
+
+#dropdown1{
+	width:200px;
+	font-size:18px;
+}
+
+.reveal-btn{
+	margin-top:20px;
+	width:65%;
+}
+
+.nav-wrapper{
+	padding-top:13px;
+	line-height: 48px;
+}
+.nav-wrapper ul{
+	padding-top:7px;
+}
+
+.logo-container{
+	margin:0;
+	padding:0;
+}
+.realnav{
+	background:black;
+}
+
+.example-desc{
+	font-size: 12px;
+	line-height: 16px;
+	color:#CCC;
+}
+
+footer.page-footer{
+	margin:0;
+	padding:0;
+}
+
+footer.page-footer a{
+	color:#FFF;
+	font-weight: 500;
+}
+
+footer.page-footer a:hover{
+	color:#666;
+	background:#FFF;
+	padding:2px 3px;
+}
