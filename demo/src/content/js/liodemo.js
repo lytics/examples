@@ -5,9 +5,9 @@ var getDemoDetails = function(name){
   var demo = {};
 
   switch( name ){
-    case 'personalization-swap':
+    case 'personalization-toggle':
       demo = {
-        title: 'Personalization - Swap',
+        title: 'Personalization - Element Toggle',
         description: 'A simple approach to content personalization via hiding/showing standard HTML elements based on a users segment membership. In the following the headline, image and main call to action button are modified based on a specific users details.',
         customization: [
           {slug: 'smt_new', detail: 'If the user is new we give them a special image.'},
@@ -15,7 +15,7 @@ var getDemoDetails = function(name){
           {slug: 'is_member', detail: 'If the user has registered we welcome them back and give them a login button rather than sign up.'},
           {slug: 'default', detail: 'Headline, image and call to action all have default states.'}
         ],
-        landing: '/demo/personalization-swap.html'
+        landing: '/demo/personalization-toggle.html'
       }
       break;
 

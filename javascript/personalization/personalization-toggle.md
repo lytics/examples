@@ -3,7 +3,7 @@
 ##Overview
 Toggling the visibility of a single or group of elements is a built in feature for Lytics. This allows you to easily add a few data attributes to any standard HTML element and harness the power of real-time personalization. Something as simple as showing a `login` button vs a `signup` button for existing members can greatly improve the overall experience and that is just the start of what Lytics allows you to do.
 
-##Pre-requisites
+##Prerequisite
 *  None
 
 ##How To
@@ -42,7 +42,7 @@ Any fields that can be segmented on within Lytics can also be returned for more 
 When the Lytics tag has pulled in all user information and completed the built in customization all data can be passed to a callback of your choice. This aids in the more advanced customization.
 
 ##Testing & Debugging
-There are a variety of built in helper methods / degugging tools built in to our tag. Details can be found in our [Javascript tag developer docs](../../core/javascript_tag.md).
+There are a variety of helper method & degugging tools packaged with our tag and outlined in our [testing & debugging docs](../../core/javascript_tag.md).
     
 ##Demo
-* [View Live Demo of Lytics powered personalization](http://example.getlytics.com:2000/personalization-swap.html)
+* [View Live Demo of Lytics powered personalization](http://example.getlytics.com:2000/personalization-toggle.html)
