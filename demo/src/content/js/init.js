@@ -50,6 +50,6 @@
 	$( '[data-newdemo]' ).click(function() {
 		var key = $(this).attr('data-newdemo');
 		saveDataToStorage('demoName', key);
-		window.location.href = "/" + key + ".html";
+		window.location.href = "/examples/" + key + ".html";
 	});
 })(jQuery); // end of jQuery name space
