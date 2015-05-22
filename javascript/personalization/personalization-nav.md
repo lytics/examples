@@ -13,4 +13,4 @@ There are many instances where marketers are faced with trying to stuff all the 
 [See Personalization - Toggle Documentation](../../core/segment_creation.md).
 
 ##Demo
-[View Live Demo of Lytics powered personalization](http://example.getlytics.com:2000/personalization-nav.html)
+[View Live Demo of Lytics powered personalization](http://lytics.github.io/examples/personalization-nav.html)

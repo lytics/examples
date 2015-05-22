@@ -48,4 +48,4 @@ Handler function leverages jQuery to alter the input value once data has been re
 [More details and examples](../../core/javascript_tag.md) regarding the proper setup and config of the Lytics tag.
     
 ##Demo
-* [View Live Demo of Lytics real-time data science](http://example.getlytics.com:2000/personalization-datascience.html)
+* [View Live Demo of Lytics real-time data science](http://lytics.github.io/examples/personalization-datascience.html)

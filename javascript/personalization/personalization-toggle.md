@@ -51,4 +51,4 @@ When the Lytics tag has pulled in all user information and completed the built i
 There are a variety of helper method & degugging tools packaged with our tag and outlined in our [testing & debugging docs](../../core/javascript_tag.md).
     
 ##Demo
-* [View Live Demo of Lytics powered personalization](http://example.getlytics.com:2000/personalization-toggle.html)
+* [View Live Demo of Lytics powered personalization](http://lytics.github.io/examples/personalization-toggle.html)
