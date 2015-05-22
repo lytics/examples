@@ -25,44 +25,47 @@
   </div>
 
   <script>
-    var petType = "catbunny",
-        petTypePlural,
-        typesOut = "",
-        petCount = 0,
-        image;
+    window.trigger_redirect = true;
+    window.trigger_redirect_func = function(){
+      var petType = "catbunny",
+          petTypePlural,
+          typesOut = "",
+          petCount = 0,
+          image;
 
-    for (var p in window.lio.data.pet_type_ct) {
-      var cnt = window.lio.data.pet_type_ct[p];
+      for (var p in window.lio.data.pet_type_ct) {
+        var cnt = window.lio.data.pet_type_ct[p];
 
-      typesOut = typesOut + '<strong>'+p+'</strong>: '+cnt+'<br/>';
+        typesOut = typesOut + '<strong>'+p+'</strong>: '+cnt+'<br/>';
 
-      if(cnt > petCount){
-        petType = p;
-        petCount = cnt;
+        if(cnt > petCount){
+          petType = p;
+          petCount = cnt;
+        }
       }
+
+      console.log('#target-'+petType);
+      $('#target-'+petType).show();
+
+      switch(petType){
+        case "catbunny":
+        petTypePlural = "animals";
+        break;
+
+        case "dog":
+        petTypePlural = "dogs";
+        break;
+
+        case "cat":
+        petTypePlural = "cats";
+        break;
+
+        case "bunny":
+        petTypePlural = "bunnies";
+        break;
+      }
+
+      $('#animal-name').html(petTypePlural);
+      $('#types').html(typesOut);
     }
-
-    console.log('#target-'+petType);
-    $('#target-'+petType).show();
-
-    switch(petType){
-      case "catbunny":
-      petTypePlural = "animals";
-      break;
-
-      case "dog":
-      petTypePlural = "dogs";
-      break;
-
-      case "cat":
-      petTypePlural = "cats";
-      break;
-
-      case "bunny":
-      petTypePlural = "bunnies";
-      break;
-    }
-
-    $('#animal-name').html(petTypePlural);
-    $('#types').html(typesOut);
   </script>

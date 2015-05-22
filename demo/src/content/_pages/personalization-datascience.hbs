@@ -36,7 +36,10 @@
   </div>
 
   <script>
-    if(window.lio.data.propensity < 0.20){
-      $('#propensity-offer').html("Sign Up Now &amp; Get 20% Off Your Fees").removeClass('green').addClass('red');
+    window.trigger_redirect = true;
+    window.trigger_redirect_func = function(){
+      if(window.lio.data.propensity < 0.20){
+        $('#propensity-offer').html("Sign Up Now &amp; Get 20% Off Your Fees").removeClass('green').addClass('red');
+      }
     }
   </script>
