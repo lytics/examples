@@ -30,7 +30,6 @@
 			  }
 			}
 		}
-		// });
 	}
 
 	$( '#reveal-elements' ).hover(
@@ -44,7 +43,13 @@
 	$( '[data-newuser]' ).click(function() {
 		var key = $(this).attr('data-newuser');
 		saveDataToStorage('userName', key);
-		location.reload();
+
+		if(window.location.pathname.includes("personalization-redirect_")){
+			key = getDataFromStorage('demoName');
+			window.location.href = "/" + key + ".html";
+		}else{
+			location.reload();
+		}
 	});
 
 	$( '[data-newdemo]' ).click(function() {

@@ -6,6 +6,12 @@ Toggling the visibility of a single or group of elements is a built in feature f
 ##Prerequisite
 *  None
 
+##Potential Use Cases
+*  Member / Non Member Optimization
+*  Name Recognition
+*  Offer Delivery
+*  Content Optimization
+
 ##How To
 
 ### 1. Install Lytics Javscript Tag

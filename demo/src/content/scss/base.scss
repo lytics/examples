@@ -6,10 +6,37 @@
  * Made By MaterializeCSS.com
  */
 
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin-bottom:100px;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
 h5{
 	margin-top:15px;
 	padding:0;
 	line-height: 12px;
+}
+
+.target-image{
+	display: none;
+}
+
+.nav-button{
+	background: RGBA(85,85,85,1);
+	color: #FFF;
+	padding-left:15px;
+	padding-right:15px;
+	border-radius: 10px;
+	margin-left:10px;
+}
+.nav-button:hover{
+	background: #000;
 }
 
 .reveal-element {
@@ -28,7 +55,7 @@ h5{
 }
 
 img.logo{
-	width:200px;
+	width:175px;
 }
 
 #current-demo-detail{
@@ -43,9 +70,12 @@ img.logo{
 	margin:5px 5px 5px 0;
 }
 
+.example-segments{
+	line-height: 40px;
+}
 .example-segments strong{
 	margin-right:15px;
-	color: RGBA(0,170,240,1);
+	color: white;
 }
 .example-detail{
 	display: none;
@@ -65,7 +95,9 @@ img.logo{
 nav{
 	height: auto;
 	background-color: #555;
-	padding-top:15px;
+	padding-top:35px;
+	box-shadow:none;
+	margin-bottom:20px;
 }
 
 nav .which-demo{
@@ -88,6 +120,9 @@ nav .which-demo a{
 	background-color:#777;*/
 }
 
+h1,h2{
+	font-weight: 300;
+}
 nav p{
 	margin:0;
 	padding:0;
@@ -107,6 +142,7 @@ nav p{
 	padding-top:13px;
 	line-height: 48px;
 }
+
 .nav-wrapper ul{
 	padding-top:7px;
 }
@@ -115,28 +151,42 @@ nav p{
 	margin:0;
 	padding:0;
 }
+
 .realnav{
 	background:black;
 }
 
 .example-desc{
-	font-size: 12px;
-	line-height: 16px;
+	font-size: 14px;
+	line-height: 18px;
 	color:#CCC;
 }
 
-footer.page-footer{
+footer{
 	margin:0;
-	padding:0;
+	padding:15px 0 0 0;
+	width:100%;
+	position: fixed;
+	bottom:0;
+	color: #FFF;
+
+	a{
+		color:#FFF;
+		font-weight: 500;
+
+		&:hover{
+			color:#FFF;
+			background:#666;
+			padding:2px 3px;
+		}
+	}
 }
 
-footer.page-footer a{
-	color:#FFF;
-	font-weight: 500;
+hr{
+	margin:10px 0;
+	opacity: .25;
 }
 
-footer.page-footer a:hover{
-	color:#666;
-	background:#FFF;
-	padding:2px 3px;
+p{
+	font-size:14px;
 }
