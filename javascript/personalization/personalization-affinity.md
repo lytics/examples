@@ -44,7 +44,7 @@ Handler function leverages jQuery to alter the input value once data has been re
 		 }
 		}
 
-		$('#target-image').attr("src", "/img/"+petType+".jpg").show();
+		$('#target-image').attr("src", "http://lytics.github.io/examples/img/"+petType+".jpg").show();
 	}
 </script>
 ```
