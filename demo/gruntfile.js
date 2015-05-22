@@ -130,5 +130,6 @@ module.exports = function (grunt) {
 
   /* grunt tasks */
   grunt.registerTask('default', ['sass', 'concat', 'assemble', 'copy', 'notify:watch', 'connect:server', 'watch']);
+  grunt.registerTask('build', ['sass', 'concat', 'assemble', 'copy']);
 
 };
