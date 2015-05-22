@@ -348,6 +348,9 @@ var ly_cid = "1896";
         w.lio.setCookie("ly_segs", JSON.stringify(w.lio.segmentsHash), 15);
         w.lio.data = json.data;
 
+        // mock propensity
+        w.lio.data.propensity = window.user.propensity || 0.00;
+
         if(document.addEventListener){
           // Listen for "DOMContentLoaded"
           document.addEventListener("DOMContentLoaded", function(event) {

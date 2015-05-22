@@ -9,6 +9,7 @@
 
   <!-- CSS  -->
   <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
   <!-- lytics javascript tag -->
   <script src="js/liodemo.js"></script>
@@ -33,109 +34,75 @@
           </div>
 
           <p class="example-desc" id="current-demo-description"></p>
-          <p class="example-detail tooltipped" id="current-demo-detail" data-position="bottom" data-delay="25" data-tooltip="Describes the types of customization added to this particular demo. When the current users segment(s) match any of these defined states the content below should be altered as such."></p>
-          <p class="example-segments" id="current-user-segments"><strong class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="Displays the currently selected users live segments delivered from Lytics. These can be managed from your Lytics dashboard.">User's Segments:</strong></p>
 
+          <hr>
+
+          <p class="example-detail tooltipped" id="current-demo-detail" data-position="bottom" data-delay="25" data-tooltip="Describes the types of customization added to this particular demo. When the current users segment(s) match any of these defined states the content below should be altered as such."></p>
+
+          <hr>
+
+          <p class="example-segments" id="current-user-segments"><strong class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="Displays the currently selected users live segments delivered from Lytics. These can be managed from your Lytics dashboard.">User's Segments:</strong></p>
         </div>
+
         <div class="col s3">
           <ul id="dropdown2" class="dropdown-content">
             <li><a data-newuser="markhayden">Mark H.</a></li>
             <li><a data-newuser="kylemorrow">Kyle M.</a></li>
-            <li><a data-newuser="robthomas">Rob T.</a></li>
-            <li><a data-newuser="aaronthomas">Aaron T.</a></li>
-            <li><a data-newuser="michaethomas">Michael T.</a></li>
+            <li><a data-newuser="robthomas">Rob S.</a></li>
+            <li><a data-newuser="aaronthomas">Aaron R.</a></li>
+            <li><a data-newuser="michaethomas">Michael L.</a></li>
           </ul>
-          <a class="btn dropdown-button right" href="#!" data-activates="dropdown2"><span id="current-user-name">Simulate User</span><i class="mdi-navigation-arrow-drop-down right"></i></a>
+          <a class="btn dropdown-button right purple" href="#!" data-activates="dropdown2"><span id="current-user-name">Simulate User</span><i class="mdi-navigation-arrow-drop-down right"></i></a>
           <a class="grey btn right tooltipped reveal reveal-btn" id="reveal-elements" data-position="bottom" data-delay="25" data-tooltip="All elements that have been personalized to this user are highlighted below in blue. Descriptions to the left outline what was altered based on the users segment/data.">Highlight</a>
         </div>
       </div>
-    </div>
-    <div class="green lighten-1">
-      <div class="nav-wrapper container">
-        <div class="row">
-          <div class="col s12">
-            <a id="logo-container" href="#" class="brand-logo"><img class="logo" src="img/squeakyfuzzylogo-white.svg" alt=""></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#">Squeaky</a></li>
-              <li><a href="#">Fuzzy</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+    </div>  </nav>
 
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-
-      <h1 class="header center grey-text" data-liogroup="intro" data-liotrigger="is_mark">Get The Daily Fuzzy, Mark.</h1>
-      <h1 class="header center grey-text" data-liogroup="intro" data-liotrigger="is_member">Are you enjoying The Daily Fuzzy?</h1>
-      <h1 class="header center grey-text" data-liogroup="intro" data-liotrigger="has_firstname"><span data-firstname>REPLACE</span>, get The Daily Fuzzy!</h1>
-      <h1 class="header center grey-text" data-liogroup="intro" data-liotrigger="default">Get The Daily Fuzzy</h1>
-
-      <div class="row center">
-        <div data-liogroup="img" data-liotrigger="is_member"><img src="img/chicks.jpg"  width="500" alt=""></div>
-        <div data-liogroup="img" data-liotrigger="is_mark"><img src="img/kitten.jpg"  width="500" alt=""></div>
-        <div data-liogroup="img" data-liotrigger="smt_new"><img src="img/kitten.jpg"  width="500" alt=""></div>
-        <div data-liogroup="img" data-liotrigger="default"><img src="img/rabbit.jpg"  width="500" alt=""></div>
-        <h5 class="header col s12 light">Fuzzy goodness delivered to your inbox, daily.</h5>
-      </div>
-
-      <div class="row center">
-        <a href="javascript:alert('this is a test')" class="btn-large green" data-liogroup="abc" data-liotrigger="is_member">Log In &amp; See Todays</a>
-        <a href="javascript:alert('this is a test')" class="btn-large green" data-liogroup="abc" data-liotrigger="default">Sign Up &amp; See Todays</a>
-      </div>
-      <br><br>
-
-    </div>
   </div>
 
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block center-align">
-            <img class="circle responsive-img" width="150" src="img/email.jpg">
-            <h5 class="center">In Your Inbox</h5>
-
-            <p class="light">Puppy kitty ipsum dolor sit good dog wagging snowball birds. Kitten foot parakeet slobber feathers scratcher feeder fish dinnertime birds paws. Tuxedo park run fast smooshy bark wagging cage lazy dog aquatic.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block center-align">
-            <img class="circle responsive-img" width="150" src="img/animals.jpg">
-            <h5 class="center">Because, Animals!</h5>
-
-            <p class="light">Tuxedo commands slobbery grooming swimming scratch stay licks vaccine tuxedo hamster heel carrier field slobbery scratch. Roll Over cockatiel finch fur heel head brush ball swimming speak.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block center-align">
-            <img class="circle responsive-img" width="150" src="img/share.jpg">
-            <h5 class="center">Share</h5>
-
-            <p class="light">Rover left paw pet food good boy cage catch nest. Litter Box vaccine food tooth lick Mittens foot hamster water dog commands slobbery pet food meow toys parakeet fluffy whiskers fetch string paws stick meow ID tag park teeth litter mouse.</p>
-          </div>
-        </div>
+      <div class="col s12 center-align">
+        <h2>Redirecting for user: <span data-firstname=""></span></h2>
+        <p class="grey-text">You will be redirected in a few seconds. This page is a placeholder used only to give details on the redirect that is about to occur. In production this can be skipped entirely and hte experience as an end-user is seemless.</p>
+        <h2 id="counter">5</h2>
       </div>
+
+      <script>
+        window.trigger_redirect = true;
+        window.trigger_redirect_func = function(){
+          var counter = 5
+          setInterval(function() {
+            counter--;
+            $('#counter').html(counter);
+
+            if(counter <= 0){
+              if(window.lio.inSegment('is_member')){
+                window.location.replace('/personalization-redirect_is_member.html');
+              }else if(window.lio.inSegment('smt_new')){
+                window.location.replace('/personalization-redirect_is_new.html');
+              }else{
+                window.location.replace('/personalization-redirect_default.html');
+              }
+            }
+          }, 1000);
+        }
+      </script>
     </div>
   </div>
-  <footer class="page-footer green">
-    <div class="footer-copyright">
+  <footer class="grey light-3">
+    <div>
       <div class="container">
-        Made to demonstrate the power of <a href="http://getlytics.com">Lytics</a>
+        <div class="row">
+          <div class="col s6">A demonstration of the power of <a href="http://getlytics.com">Lytics</a></div>
+          <div class="col s6 right-align">View on <a href="http://getlytics.com">Github</a></div>
+        </div>
       </div>
     </div>
   </footer>
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
