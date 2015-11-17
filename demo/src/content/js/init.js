@@ -20,7 +20,7 @@
 	$('#current-user-name').html(btnName);
 
 	window.reveal = function(method){		// $.each($('[data-liotrigger]'), function( index, value ) {
-		var elementObj = window.lio.peppedElements;
+		var elementObj = window.lio.preppedElements;
       	for (var key in elementObj) {
       		for (var ci = 0, cl = elementObj[key].length; ci < cl; ci++) {
 			  if( method == "add" ){
@@ -46,7 +46,7 @@
 
 		if(window.location.pathname.includes("personalization-redirect_")){
 			key = getDataFromStorage('demoName');
-			window.location.href = "/examples/" + key + ".html";
+			window.location.href = "/" + key + ".html";
 		}else{
 			location.reload();
 		}
@@ -55,6 +55,6 @@
 	$( '[data-newdemo]' ).click(function() {
 		var key = $(this).attr('data-newdemo');
 		saveDataToStorage('demoName', key);
-		window.location.href = "/examples/" + key + ".html";
+		window.location.href = "/" + key + ".html";
 	});
 })(jQuery); // end of jQuery name space
