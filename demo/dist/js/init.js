@@ -46,7 +46,7 @@
 
 		if(window.location.pathname.includes("personalization-redirect_")){
 			key = getDataFromStorage('demoName');
-			window.location.href = "/" + key + ".html";
+			window.location.href = "/examples/" + key + ".html";
 		}else{
 			location.reload();
 		}
@@ -55,6 +55,6 @@
 	$( '[data-newdemo]' ).click(function() {
 		var key = $(this).attr('data-newdemo');
 		saveDataToStorage('demoName', key);
-		window.location.href = "/" + key + ".html";
+		window.location.href = "/examples/" + key + ".html";
 	});
 })(jQuery); // end of jQuery name space

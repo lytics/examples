@@ -46,7 +46,7 @@
 
 		if(window.location.pathname.includes("personalization-redirect_")){
 			key = getDataFromStorage('demoName');
-			window.location.href = "examples/" + key + ".html";
+			window.location.href = "/examples/" + key + ".html";
 		}else{
 			location.reload();
 		}
