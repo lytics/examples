@@ -37,7 +37,7 @@ Toggling the visibility of a single or group of elements is a built in feature f
 	  By default Lytics will begin to identify and track users by our own unique Id's. In the case where you have other information, such as a user id, to identify a user you can override our identification and use whatever you would like. Simply pass in the name of the field and the value and we will query users based on that.
 * **User Fields**
 	* `window.liosetup.fields = "email,firstname,lastname";`    
- 	   One of the most powerful features of Lytics is the ability to return data, in real-time, for a user. Adding the desired fields in this comma separated string will allow for data in addition to segment membership to be returned for more advanced personalizaiton. `Note, fields must be whitelisted before they will be returned`.
+ 	   One of the most powerful features of Lytics is the ability to return data, in real-time, for a user. Adding the desired fields in this comma separated string will allow for data in addition to segment membership to be returned for more advanced personalization. `Note, fields must be whitelisted before they will be returned`.
 
 ###Full Implementation Example
 ```html
