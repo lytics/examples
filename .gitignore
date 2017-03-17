@@ -4,3 +4,5 @@
 # Grunt
 demo/.sass-cache
 demo/node_modules
+javascript/callbacks/node_modules
+javascript/googledfp/node_modules

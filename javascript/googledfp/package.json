@@ -1,0 +1,13 @@
+{
+  "name": "lytics_for_dfp",
+  "version": "0.0.1",
+  "description": "Code snippet for creating callback and working with DFP.",
+  "author": "Lytics, Inc.",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-connect": "^2.3.1",
+    "gulp-util": "^3.0.7"
+  }
+}
