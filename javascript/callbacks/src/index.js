@@ -2,7 +2,7 @@
     // add lytics callback
     w.liosetup = w.liosetup || {};
     w.liosetup.callback = w.liosetup.callback || [];
-    w.liosetup.addCallback = function(fn){
+    w.liosetup.addEntityLoadedCallback = function(fn){
         // handle legacy function callback cleanup
         if(typeof w.liosetup.callback === 'function'){
             var arr = [];
