@@ -1,5 +1,3 @@
-
-// MUST REMOVE ga('send', 'pageview'); LINE FROM DEFAULT GA TAG
 (function(d, w) {
     var setLyticsDimensionsAndPageView = function(data){
         ga(function() {
@@ -30,5 +28,9 @@
     }
 
     // add the callback
-    w.liosetup.callback = setLyticsDimensionsAndPageView;
+    if(w.liosetup && typeof w.liosetup.addEntityLoadedCallback === 'function'){
+        w.liosetup.addEntityLoadedCallback(setLyticsDimensionsAndPageView);
+    } else {
+        console.warn("unable to add Lytics callback, missing callback handler")
+    }
 }(document, window));
