@@ -1,0 +1,192 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin-bottom:100px;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+h5{
+	margin-top:15px;
+	padding:0;
+	line-height: 12px;
+}
+
+.target-image{
+	display: none;
+}
+
+.nav-button{
+	background: RGBA(85,85,85,1);
+	color: #FFF;
+	padding-left:15px;
+	padding-right:15px;
+	border-radius: 10px;
+	margin-left:10px;
+}
+.nav-button:hover{
+	background: #000;
+}
+
+.reveal-element {
+  position: relative;
+}
+
+.reveal-element:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: RGBA(41,182,246,.6);
+}
+
+img.logo{
+	width:175px;
+}
+
+#current-demo-detail{
+	margin-top:15px;
+	line-height: 25px;
+	font-size:12px;
+}
+#current-demo-detail span{
+	padding:3px 7px;
+	background: RGBA(0,170,240,1);
+	color: white;
+	margin:5px 5px 5px 0;
+}
+
+.example-segments{
+	line-height: 40px;
+}
+.example-segments strong{
+	margin-right:15px;
+	color: white;
+}
+.example-detail{
+	display: none;
+}
+
+.example-segments span{
+	margin-right:15px;
+	padding:3px 7px;
+	background: RGBA(0,170,240,1);
+	color: white;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+nav{
+	height: auto;
+	background-color: #555;
+	padding-top:35px;
+	box-shadow:none;
+	margin-bottom:20px;
+}
+
+nav .which-demo{
+	width:500px;
+	line-height:45px;
+	font-size:18px;
+	background-color:#666;
+	margin-bottom:15px;
+}
+
+nav .which-demo a{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.demo-dropdown{
+	width:500px !important;
+	/*line-height:45px;
+	font-size:18px;
+	background-color:#777;*/
+}
+
+h1,h2{
+	font-weight: 300;
+}
+nav p{
+	margin:0;
+	padding:0;
+}
+
+#dropdown1{
+	width:200px;
+	font-size:18px;
+}
+
+.reveal-btn{
+	margin-top:20px;
+	width:65%;
+}
+
+.nav-wrapper{
+	padding-top:13px;
+	line-height: 48px;
+}
+
+.nav-wrapper ul{
+	padding-top:7px;
+}
+
+.logo-container{
+	margin:0;
+	padding:0;
+}
+
+.realnav{
+	background:black;
+}
+
+.example-desc{
+	font-size: 14px;
+	line-height: 18px;
+	color:#CCC;
+}
+
+footer{
+	margin:0;
+	padding:15px 0 0 0;
+	width:100%;
+	position: fixed;
+	bottom:0;
+	color: #FFF;
+
+	a{
+		color:#FFF;
+		font-weight: 500;
+
+		&:hover{
+			color:#FFF;
+			background:#666;
+			padding:2px 3px;
+		}
+	}
+}
+
+hr{
+	margin:10px 0;
+	opacity: .25;
+}
+
+p{
+	font-size:14px;
+}

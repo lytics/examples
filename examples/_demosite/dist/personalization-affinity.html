@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Lytics Demos</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- CSS  -->
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <!-- lytics javascript tag -->
+  <script src="js/liodemo.js"></script>
+  <script src="js/lio.js"></script>
+
+</head>
+<body>    <!-- start nav -->
+    <nav role="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col s9">
+            <div class="which-demo">
+              <a class="dropdown-button" href="#!" data-activates="dropdown1"><span id="current-demo-name">Select A Demo To Proceed</span><i class="mdi-navigation-arrow-drop-down right"></i></a>
+              <ul id="dropdown1" class="dropdown-content demo-dropdown">
+                <li><a data-newdemo="personalization-toggle">Personalization - Element Toggle</a></li>
+                <li><a data-newdemo="personalization-redirect">Personalization - Redirects</a></li>
+                <li><a data-newdemo="personalization-nav">Personalization - Navigation</a></li>
+                <li><a data-newdemo="personalization-affinity">Personalization - Content Affinity</a></li>
+                <li><a data-newdemo="personalization-datascience">Personalization - Data Science</a></li>
+                <li><a data-newdemo="personalization-forms">Personalization - Form Efficiency </a></li>
+              </ul>
+            </div>
+  
+            <p class="example-desc" id="current-demo-description"></p>
+  
+            <hr>
+  
+            <p class="example-detail tooltipped" id="current-demo-detail" data-position="bottom" data-delay="25" data-tooltip="Describes the types of customization added to this particular demo. When the current users segment(s) match any of these defined states the content below should be altered as such."></p>
+  
+            <hr>
+  
+            <p class="example-segments" id="current-user-segments"><strong class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="Displays the currently selected users live segments delivered from Lytics. These can be managed from your Lytics dashboard.">User's Segments:</strong></p>
+          </div>
+  
+          <div class="col s3">
+            <ul id="dropdown2" class="dropdown-content">
+              <li><a data-newuser="markhayden">Mark H.</a></li>
+              <li><a data-newuser="kylemorrow">Kyle M.</a></li>
+              <li><a data-newuser="robthomas">Rob S.</a></li>
+              <li><a data-newuser="aaronthomas">Aaron R.</a></li>
+              <li><a data-newuser="michaethomas">Michael L.</a></li>
+            </ul>
+            <a class="btn dropdown-button right purple" href="#!" data-activates="dropdown2"><span id="current-user-name">Simulate User</span><i class="mdi-navigation-arrow-drop-down right"></i></a>
+            <a class="grey btn right tooltipped reveal reveal-btn" id="reveal-elements" data-position="bottom" data-delay="25" data-tooltip="All elements that have been personalized to this user are highlighted below in blue. Descriptions to the left outline what was altered based on the users segment/data.">Highlight</a>
+          </div>
+        </div>
+      </div>  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s8 offset-s2">
+          <center>
+            <h2 class="center-align">Hey cool, you like <span id="animal-name"></span>.</h2>
+            <img class="target-image" id="target-catbunny" src="img/animals.jpg"  width="500" alt="" style="display:none;">
+            <img class="target-image" id="target-dog" src="img/dog.jpg"  width="500" alt="" style="display:none;">
+            <img class="target-image" id="target-cat" src="img/cat.jpg"  width="500" alt="" style="display:none;">
+            <img class="target-image" id="target-bunny" src="img/bunny.jpg"  width="500" alt="" style="display:none;">
+          </center>
+        </div>
+        <div class="col s8 offset-s2">
+          <p class="center-align" id="types"></p>
+          <p class="center-align grey-text" data-liogroup="a" data-liotrigger="default">Using "Value Counts" we can determing some basic content affinity. In the above example, we alter the image based on tags on a page view. Available tags are "cat", "dog" and "bunny." Whichever one out of the three gets more interactions from the user determine the image.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.trigger_redirect = true;
+    window.trigger_redirect_func = function(){
+      var petType = "catbunny",
+          petTypePlural,
+          typesOut = "",
+          petCount = 0,
+          image;
+
+      for (var p in window.lio.data.pet_type_ct) {
+        var cnt = window.lio.data.pet_type_ct[p];
+
+        typesOut = typesOut + '<strong>'+p+'</strong>: '+cnt+'<br/>';
+
+        if(cnt > petCount){
+          petType = p;
+          petCount = cnt;
+        }
+      }
+
+      console.log('#target-'+petType);
+      $('#target-'+petType).show();
+
+      switch(petType){
+        case "catbunny":
+        petTypePlural = "animals";
+        break;
+
+        case "dog":
+        petTypePlural = "dogs";
+        break;
+
+        case "cat":
+        petTypePlural = "cats";
+        break;
+
+        case "bunny":
+        petTypePlural = "bunnies";
+        break;
+      }
+
+      $('#animal-name').html(petTypePlural);
+      $('#types').html(typesOut);
+    }
+  </script>
+  <footer class="grey light-3">
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col s6">A demonstration of the power of <a href="http://getlytics.com">Lytics</a></div>
+          <div class="col s6 right-align">View on <a href="https://github.com/lytics/examples">Github</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

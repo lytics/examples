@@ -1,0 +1,71 @@
+  {{>site-navigation}}
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s8 offset-s2">
+          <center>
+            <h2 class="center-align">Hey cool, you like <span id="animal-name"></span>.</h2>
+            <img class="target-image" id="target-catbunny" src="img/animals.jpg"  width="500" alt="" style="display:none;">
+            <img class="target-image" id="target-dog" src="img/dog.jpg"  width="500" alt="" style="display:none;">
+            <img class="target-image" id="target-cat" src="img/cat.jpg"  width="500" alt="" style="display:none;">
+            <img class="target-image" id="target-bunny" src="img/bunny.jpg"  width="500" alt="" style="display:none;">
+          </center>
+        </div>
+        <div class="col s8 offset-s2">
+          <p class="center-align" id="types"></p>
+          <p class="center-align grey-text" data-liogroup="a" data-liotrigger="default">Using "Value Counts" we can determing some basic content affinity. In the above example, we alter the image based on tags on a page view. Available tags are "cat", "dog" and "bunny." Whichever one out of the three gets more interactions from the user determine the image.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.trigger_redirect = true;
+    window.trigger_redirect_func = function(){
+      var petType = "catbunny",
+          petTypePlural,
+          typesOut = "",
+          petCount = 0,
+          image;
+
+      for (var p in window.lio.data.pet_type_ct) {
+        var cnt = window.lio.data.pet_type_ct[p];
+
+        typesOut = typesOut + '<strong>'+p+'</strong>: '+cnt+'<br/>';
+
+        if(cnt > petCount){
+          petType = p;
+          petCount = cnt;
+        }
+      }
+
+      console.log('#target-'+petType);
+      $('#target-'+petType).show();
+
+      switch(petType){
+        case "catbunny":
+        petTypePlural = "animals";
+        break;
+
+        case "dog":
+        petTypePlural = "dogs";
+        break;
+
+        case "cat":
+        petTypePlural = "cats";
+        break;
+
+        case "bunny":
+        petTypePlural = "bunnies";
+        break;
+      }
+
+      $('#animal-name').html(petTypePlural);
+      $('#types').html(typesOut);
+    }
+  </script>

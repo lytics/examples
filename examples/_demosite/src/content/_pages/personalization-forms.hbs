@@ -1,0 +1,49 @@
+{{>site-navigation}}
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <h2 class="center-align grey-text text-darken-2">Signup.<br/>Be Awesome.</h2>
+        <p class="center-align grey-text"><img src="img/hamster.jpg" width="200" alt=""></p>
+
+        <form class="col s6 offset-s3">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+        </form>
+
+        <script>
+          window.trigger_redirect = true;
+          window.trigger_redirect_func = function(){
+            $('#first_name').val(window.lio.data.firstname);
+            $('#last_name').val(window.lio.data.lastname);
+            $('#email').val(window.lio.data.email);
+          }
+        </script>
+
+      </div>
+    </div>
+  </div>

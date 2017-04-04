@@ -1,0 +1,45 @@
+  {{>site-navigation}}
+  <div class="purple lighten-1">
+      <div class="nav-wrapper container">
+        <div class="row">
+          <div class="col s12">
+            <a id="logo-container" href="#" class="brand-logo"><img class="logo" src="img/squeakyfuzzylogo-white.svg" alt=""></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Squeaky</a></li>
+              <li><a href="#">Fuzzy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h1 class="header center grey-text" data-liogroup="intro" data-liotrigger="is_member">Hey <span data-firstname></span>, enjoying The Daily Fuzzy?</h1>
+      <h1 class="header center grey-text" data-liogroup="intro" data-liotrigger="has_firstname"><span data-firstname></span>, get The Daily Fuzzy!</h1>
+      <h1 class="header center grey-text" data-liogroup="intro" data-liotrigger="default">Get The Daily Fuzzy</h1>
+
+      <div class="row center">
+        <div data-liogroup="img" data-liotrigger="is_member"><img src="img/chicks.jpg"  width="500" alt=""></div>
+        <div data-liogroup="img" data-liotrigger="smt_dormant"><img src="img/kitten.jpg"  width="500" alt=""></div>
+        <div data-liogroup="img" data-liotrigger="default"><img src="img/rabbit.jpg"  width="500" alt=""></div>
+        <h5 class="header col s12 light">Fuzzy goodness delivered to your inbox, daily.</h5>
+      </div>
+
+      <div class="row center">
+        <a href="javascript:alert('this is a test')" class="btn-large purple" data-liogroup="abc" data-liotrigger="is_member">Log In</a>
+        <a href="javascript:alert('this is a test')" class="btn-large green" id="propensity-offer" data-liogroup="abc" data-liotrigger="default">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.trigger_redirect = true;
+    window.trigger_redirect_func = function(){
+      if(window.lio.data.propensity < 0.20){
+        $('#propensity-offer').html("Sign Up Now &amp; Get 20% Off Your Fees").removeClass('green').addClass('red');
+      }
+    }
+  </script>

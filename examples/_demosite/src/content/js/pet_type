@@ -1,0 +1,110 @@
+pet_type
+
+
+http GET 'http://c.lytics.io/c/3721beae4c05ee96b337b48e1912bffe?email=rob@lytics.io&firstname=Rob&lastname=Shields&_ts=1431619510533&_nmob=t&_device=desktop&url=www.getlytics.com&_uid=77390.50036621090&_v=1.24&_ca=jstag1&pet_type=dog'
+
+http GET 'http://c.lytics.io/c/3721beae4c05ee96b337b48e1912bffe?email=aaron@lytics.io&firstname=Aaron&lastname=Raddon&_ts=1431619510533&_nmob=t&_device=desktop&url=www.getlytics.com&_uid=77390.50036621090&_v=1.24&_ca=jstag1&pet_type=bunny'
+
+http GET 'http://c.lytics.io/c/3721beae4c05ee96b337b48e1912bffe?email=james@lytics.io&firstname=James&lastname=McDermot&_ts=1431619510533&_nmob=t&_device=desktop&url=www.getlytics.com&_uid=77390.50036621050&_v=1.24&_ca=jstag1&pet_type=bunny'
+
+
+
+case 'markhayden':
+      user = {
+        email: 'mark@lytics.io',
+        firstname: 'Mark',
+        lastname: 'Hayden',
+        uid: 'e672c1b777b093c43fd1e838fb2a861f'
+      }
+      break;
+
+    case 'kylemorrow':
+      user = {
+        email: 'kyle@lytics.io',
+        firstname: 'Kyle',
+        lastname: 'Morrow',
+        uid: '77390.50036621094'
+      }
+      break;
+
+
+    case 'jamesthomas':
+      user = {
+        email:'james@lytics.io',
+        firstname: 'James',
+        lastname: 'Thomas',
+        uid: '77390.50036621050'
+      }
+      break;
+
+    case 'michaethomas':
+      user = {
+        email:'michael@lytics.io',
+        firstname: 'Michael',
+        lastname: 'Thomas',
+        uid: '77390.50033621090'
+      }
+      break;
+
+    case 'drewthomas':
+      user = {
+        email:'drew@lytics.io',
+        firstname: 'Drew',
+        lastname: 'Thomas',
+        uid: '77390.50036121090'
+      }
+      break;
+
+    case 'beccathomas':
+      user = {
+        email:'becca@lytics.io',
+        firstname: 'Becca',
+        lastname: 'Thomas',
+        uid: '77390.50066621090'
+      }
+      break;
+
+    case 'christhomas':
+      user = {
+        email:'chris@lytics.io',
+        firstname: 'Chris',
+        lastname: 'Thomas',
+        uid: '77390.60036621090'
+      }
+      break;
+
+    case 'steventhomas':
+      user = {
+        email:'steven@lytics.io',
+        firstname: 'Steven',
+        lastname: 'Thomas',
+        uid: '77390.50236621090'
+      }
+      break;
+
+    case 'michaethomasl':
+      user = {
+        email: 'schmichael@lytics.io',
+        firstname: 'Michael',
+        lastname: 'Thomas',
+        uid: '77390.10036621090'
+      }
+      break;
+
+    case 'andrewthomas':
+      user = {
+        email:'andrew@lytics.io',
+        firstname: 'Andrew',
+        lastname: 'Thomas',
+        uid: '77390.50436621090'
+      }
+      break;
+
+    case 'sarahthomas':
+      user = {
+        email:'sarah@lytics.io',
+        firstname: 'Sarah',
+        lastname: 'Thomas',
+        uid: '77390.50033321090'
+      }
+      break;

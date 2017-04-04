@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Lytics Demos</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- CSS  -->
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- lytics javascript tag -->
+  <script src="js/liodemo.js"></script>
+  <script src="js/lio.js"></script>
+
+</head>
+<body>  <!-- start nav -->
+  <nav role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col s9">
+          <div class="which-demo">
+            <a class="dropdown-button" href="#!" data-activates="dropdown1"><span id="current-demo-name">Some Demo Title</span><i class="mdi-navigation-arrow-drop-down right"></i></a>
+            <ul id="dropdown1" class="dropdown-content demo-dropdown">
+              <li><a data-newdemo="personalization-swap">Personalization - Segment Membership</a></li>
+              <li><a data-newdemo="personalization-redirect">Personalization - Redirects</a></li>
+              <li><a data-newdemo="personalization-nav">Personalization - Navigation</a></li>
+              <li><a data-newdemo="personalization-content">Personalization - Content Affinity</a></li>
+              <li><a data-newdemo="personalization-redirect">Personalization - Data Science</a></li>
+              <li><a data-newdemo="personalization-redirect">Personalization - Form Efficiency </a></li>
+            </ul>
+          </div>
+
+          <p class="example-desc" id="current-demo-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit mi arcu, sed tincidunt arcu porta at. Nullam sagittis posuere porttitor. Integer dictum hendrerit lorem sit amet interdum. Nullam congue venenatis metus et scelerisque. In quis dui dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit mi arcu, sed tincidunt arcu porta at. Nullam sagittis posuere porttitor. Integer dictum hendrerit lorem sit amet interdum. Nullam congue venenatis metus et scelerisque. In quis dui dui.</p>
+          <p class="example-segments" id="current-user-segments"><strong>User's Segments:</strong></p>
+        </div>
+        <div class="col s3">
+          <ul id="dropdown2" class="dropdown-content">
+            <li><a data-newuser="markhayden">Mark H.</a></li>
+            <li><a data-newuser="kylemorrow">Kyle M.</a></li>
+            <li><a data-newuser="robthomas">Rob T.</a></li>
+            <li><a data-newuser="aaronthomas">Aaron T.</a></li>
+          </ul>
+          <a class="btn dropdown-button right" href="#!" data-activates="dropdown2"><span id="current-user-name">Simulate User</span><i class="mdi-navigation-arrow-drop-down right"></i></a>
+          <a class="grey btn right reveal-btn" id="reveal-elements">Reveal</a>
+        </div>
+      </div>
+    </div>
+    <div class="green lighten-1">
+      <div class="nav-wrapper container">
+        <div class="row">
+          <div class="col s12">
+            <a id="logo-container" href="#" class="brand-logo"><img class="logo" src="img/squeakyfuzzylogo-white.svg" alt=""></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Squeaky</a></li>
+              <li><a href="#">Fuzzy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+              <li><a href="#">Squeaky</a></li>
+              <li><a href="#">Fuzzy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>More Stuff
+  <footer class="page-footer green">
+    <div class="footer-copyright">
+      <div class="container">
+        Made to demonstrate the power of <a href="http://getlytics.com">Lytics</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
