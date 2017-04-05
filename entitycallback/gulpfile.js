@@ -4,7 +4,14 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     connect = require('gulp-connect'),
-    gutil = require('gulp-util');
+    gutil = require('gulp-util'),
+    Server = require('karma').Server;
+
+gulp.task('test', function (done) {
+  new Server({
+    configFile: __dirname + '/karma.conf.js'
+  }, done).start();
+});
 
 gulp.task('build:js', function () {
   gulp.src('src/*.js')
@@ -29,4 +36,5 @@ gulp.task('preview', function () {
   });
 });
 
-gulp.task('default', ['build:js', 'preview', 'watch']);
+gulp.task('default', ['build:js', 'test', 'preview', 'watch']);
+gulp.task('build', ['build:js', 'test']);
