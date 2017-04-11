@@ -3,11 +3,18 @@
   "version": "0.0.1",
   "description": "Code snippet for creating callback and working with DFP.",
   "author": "Lytics, Inc.",
+  "scripts": {
+    "test": "gulp test"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-uglify": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-connect": "^2.3.1",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "jasmine": "^2.4.1",
+    "karma": "1.x || ^0.13.0",
+    "karma-jasmine": "1.x || ^0.3.6",
+    "karma-chrome-launcher": "1.x || ^0.2.0"
   }
 }
