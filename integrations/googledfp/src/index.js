@@ -13,7 +13,7 @@
     }
 
     // get segments and activate ads
-    w.liosetup.callback.push(function(data){
+    w.liosetup.addEntityLoadedCallback(function(data){
         if(data && data.segments){
           w.googletag.cmd.push(function() {
             w.googletag.pubads().setTargeting("LyticsSegments", data.segments);
